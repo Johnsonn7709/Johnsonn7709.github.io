@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    margin: 0;
+}
+
+/* Style of header */
+.header {
+    padding: 30px;
+    text-align: left;
+    background: #FAFCE7;
+	font-family: avenirblack,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.5em;
+    color: white;
+    letter-spacing: -.01em;
+	background-image: url("egyptheader6.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Font size of the h1 element */
+.header h1 {
+    font-size: 40px;
+}
+
+.header h4 {
+	font-size: 0.5em;
+}
+
+/* Style of top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #F2B233;
+}
+
+/* Style of navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #FDEB00;
+    color: black;
+}
+
+/* Change color of active tab */
+.navbar a.active {
+    background-color: #FDEB00;
+    color: black;
+}
+
+/* Style of Footer */
+footer   { font-size: 1em;
+           font-style: italic;
+           text-align: center;
+           background-color: #aaa;
+		   padding: 1em;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Creates two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main/right column */
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.rowreverse {  
+    display: flex;
+    flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+.left {
+    flex: 65%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Main column */
+.right {   
+    flex: 35%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.halfleft {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+.halfright {   
+    flex: 50%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 5px dashed #FDEB00;
+    background: #F2B233;
+}
+.blank {
+	border: 0;
+	border-bottom: 5px dashed white;
+	background: white;
+}
+
+p, td {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Container needed to position the overlay */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 190px;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* Hover over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.halfleft2 {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+	justify-content: center;
+	text-align: left;
+}
+
+.halfright2 {   
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+    justify-content: center;
+	text-align: left;
+}
+
+.rowimg {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.halfleftimg {
+    flex: 60%;
+    background-color: white;
+    padding-top: 75px;
+}
+
+.halfrightimg {   
+    flex: 40%;
+    background-color: white;
+    padding: 5px;
+}
+
+caption {
+	font-size: 30px;
+	font-family: avenirblack,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 15px;
+}
+
+input {display: block; }
+label { float: left;
+		width: 10em;
+		padding-right: 1em;
+		text-align: right; }
+#submit { margin-left: 7em; }
